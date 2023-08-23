@@ -3,10 +3,10 @@ name: Build Containers For Prod And Push To DockerHub
 on:
   pull_request:
     branches:
-      - main
+      - master
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build-and-deploy-back:
@@ -22,4 +22,5 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password:  ${{ secrets.DOCKER_PASSWORD }}
         repository: ${{ secrets.DOCKER_USERNAME }}/exchange-backend
+        dockerfile: ./Dockerfile
         tags: latest
