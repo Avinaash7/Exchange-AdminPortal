@@ -24,3 +24,4 @@ jobs:
         repository: ${{ secrets.DOCKER_USERNAME }}/exchange-backend
         dockerfile: ./Dockerfile
         tags: latest
+
