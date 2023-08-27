@@ -32,7 +32,7 @@ Route::group(['namespace'=>'Api', 'middleware' => ['api-user','checkApi']], func
 Route::group(['middleware' => 'maintenanceMode'], function (){
 
     Route::group(['namespace'=>'Api\Public', 'prefix' => 'v1/markets', 'middleware' => 'publicSecret'], function () {
-        Route::get('price/{pair?}', 'PublicController@getExchangePrice')->name('getExchangeTrade');
+        Route::get('price/{pair?}', 'PublicController@getExchangePrice')->name('getExchangePrice');
         Route::get('orderbook/{pair}', 'PublicController@getExchangeOrderBook')->name('getExchangeOrderBook');
         Route::get('trade/{pair}', 'PublicController@getExchangeTrade')->name('getExchangeTrade');
         Route::get('chart/{pair}', 'PublicController@getExchangeChart')->name('getExchangeChart');

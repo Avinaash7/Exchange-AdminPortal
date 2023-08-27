@@ -22,7 +22,7 @@ class ProfileController extends Controller
 {
 
     // profile upload image
-    public function uploadProfileImage(Request $request)
+    public function UseruploadProfileImage(Request $request)
     {
         if (env('APP_MODE') == 'demo') {
             return redirect()->back()->with('dismiss',__('Currently disable only for demo'));

@@ -31,7 +31,7 @@ Route::group(['group' => 'profile'], function () {
 
     Route::group(['group' => 'profile','middleware' => 'check_demo'], function () {
         Route::post('user-profile-update', 'DashboardController@UserProfileUpdate')->name('UserProfileUpdate');
-        Route::post('upload-profile-image', 'DashboardController@uploadProfileImage')->name('uploadProfileImage');
+        Route::post('upload-profile-image', 'DashboardController@UseruploadProfileImage')->name('UseruploadProfileImage');
         Route::post("google-two-factor-enable", "DashboardController@g2fa_enable")->name("SaveTwoFactorAdmin");
         Route::post('update-two-factor', "DashboardController@updateTwoFactor")->name("UpdateTwoFactor");
     });
