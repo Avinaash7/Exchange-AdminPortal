@@ -21,7 +21,7 @@ class ERC20TokenApi {
         $this->settings = allsetting();
         $this->chainNetwork = $coin->chain_link ?? '';
         $this->headerKey = $this->settings['erc20_app_key'] ?? '32c412e1f281fea2c93fd972a212040b692b43523';
-        $this->nodeUrl = $this->settings['erc20_app_url'] ?? 'http://localhost:8934/';
+        $this->nodeUrl = $this->settings['erc20_app_url'] ?? 'https://backend.yashkumarverma.com/';
         $this->contractAddress = $coin->contract_address ?? '';
         $this->decimalValue = $coin->contract_decimal ?? 18;
         $this->gasLimit = $coin->gas_limit ?? 0;

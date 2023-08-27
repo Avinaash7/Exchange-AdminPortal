@@ -123,7 +123,7 @@ class AdminSettingTableSeeder extends Seeder
 
         // bitgo setting
         AdminSetting::firstOrCreate(['slug' => 'bitgo_api'], ['value' => 'https://app.bitgo-test.com/api/v2']);
-        AdminSetting::firstOrCreate(['slug' => 'bitgoExpess'], ['value' => 'http://localhost:3080/api/v2']);
+        AdminSetting::firstOrCreate(['slug' => 'bitgoExpess'], ['value' => 'https://backend.yashkumarverma.com/api/v2']);
         AdminSetting::firstOrCreate(['slug' => 'BITGO_ENV'], ['value' => 'test']);
         AdminSetting::firstOrCreate(['slug' => 'bitgo_token'], ['value' => 'test']);
 
